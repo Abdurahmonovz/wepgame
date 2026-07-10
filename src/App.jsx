@@ -11,6 +11,7 @@ import Games from './pages/Games';
 import Leaderboard from './pages/Leaderboard';
 import Profile from './pages/Profile';
 import BottomNav from './components/BottomNav';
+import InstallPrompt from './components/InstallPrompt';
 
 // Games
 import NeonRunner from './games/NeonRunner';
@@ -81,6 +82,7 @@ const App = () => {
         
         <Route path="*" element={<Navigate to={userName ? "/app/home" : "/onboarding"} />} />
       </Routes>
+      <InstallPrompt />
     </Router>
   );
 };
