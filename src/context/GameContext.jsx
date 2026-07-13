@@ -17,6 +17,8 @@ export const GameProvider = ({ children }) => {
     spaceSurvivor: { best: 0, plays: 0, totalPoints: 0 },
     colorRush: { best: 0, plays: 0, totalPoints: 0 },
     shadowNinja: { best: 0, plays: 0, totalPoints: 0 },
+    archeryHero: { best: 0, plays: 0, totalPoints: 0 },
+    neonSnake: { best: 0, plays: 0, totalPoints: 0 },
   });
 
   const [achievements, setAchievements] = useState([]);
@@ -87,6 +89,8 @@ export const GameProvider = ({ children }) => {
     if (gameId === 'memoryClash' && score > 200) award('memory_genius', 'Memory Genius');
     if (gameId === 'spaceSurvivor' && score > 500) award('space_legend', 'Space Legend');
     if (gameId === 'shadowNinja' && score > 400) award('shadow_ninja_master', 'Shadow Ninja Master');
+    if (gameId === 'archeryHero' && score > 300) award('bullseye_master', 'Bullseye Master');
+    if (gameId === 'neonSnake' && score > 500) award('snake_charmer', 'Snake Charmer');
     
     if (newAchievements.length > achievements.length) {
       setAchievements(newAchievements);

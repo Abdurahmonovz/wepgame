@@ -20,6 +20,8 @@ import MemoryClash from './games/MemoryClash';
 import SpaceSurvivor from './games/SpaceSurvivor';
 import ColorRush from './games/ColorRush';
 import ShadowNinja from './games/ShadowNinja';
+import ArcheryHero from './games/ArcheryHero';
+import NeonSnake from './games/NeonSnake';
 
 const ProtectedRoute = ({ children }) => {
   const { userName } = useGame();
@@ -76,6 +78,8 @@ const App = () => {
               <Route path="spaceSurvivor" element={<SpaceSurvivor />} />
               <Route path="colorRush" element={<ColorRush />} />
               <Route path="shadowNinja" element={<ShadowNinja />} />
+              <Route path="archeryHero" element={<ArcheryHero />} />
+              <Route path="neonSnake" element={<NeonSnake />} />
             </Routes>
           </ProtectedRoute>
         } />

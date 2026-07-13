@@ -9,7 +9,9 @@ const gameNames = {
   memoryClash: 'Memory Clash',
   spaceSurvivor: 'Space Survivor',
   colorRush: 'Color Rush',
-  shadowNinja: 'Shadow Ninja'
+  shadowNinja: 'Shadow Ninja',
+  archeryHero: 'Archery Hero',
+  neonSnake: 'Neon Snake'
 };
 
 const Profile = () => {
