@@ -151,7 +151,7 @@ const SpaceSurvivor = () => {
             transform: 'translate(-50%, -50%)',
             filter: 'drop-shadow(0 0 10px rgba(0, 240, 255, 0.8))'
           }}>
-            <Rocket size={40} color="var(--neon-blue)" fill="var(--neon-blue)" style={{ transform: 'rotate(-45deg)' }} />
+            <Rocket size={56} color="var(--neon-blue)" fill="var(--neon-blue)" style={{ transform: 'rotate(-45deg)' }} />
           </div>
         </div>
       )}
