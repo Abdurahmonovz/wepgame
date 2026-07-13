@@ -20,7 +20,7 @@ const ReflexMaster = () => {
     setTimeLeft(30);
     setIsGameOver(false);
     setIsPlaying(true);
-    spawnTarget();
+    setTimeout(() => spawnTarget(), 100);
   };
 
   const spawnTarget = () => {

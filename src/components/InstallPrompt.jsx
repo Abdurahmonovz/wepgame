@@ -63,14 +63,13 @@ const InstallPrompt = () => {
     <AnimatePresence>
       {showPrompt && (
         <motion.div
-          initial={{ y: 100, opacity: 0 }}
-          animate={{ y: '-50%', opacity: 1 }}
-          exit={{ y: 100, opacity: 0 }}
+          initial={{ y: 100, x: '-50%', opacity: 0 }}
+          animate={{ y: '-50%', x: '-50%', opacity: 1 }}
+          exit={{ y: 100, x: '-50%', opacity: 0 }}
           style={{
             position: 'fixed',
             top: '50%', // Show in center so it's very obvious
             left: '50%',
-            transform: 'translate(-50%, -50%)',
             width: '90%',
             maxWidth: '400px',
             background: 'var(--bg-card)',
