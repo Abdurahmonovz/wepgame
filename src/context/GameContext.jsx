@@ -30,7 +30,18 @@ export const GameProvider = ({ children }) => {
       const data = JSON.parse(storedData);
       if (data.userName) setUserName(data.userName);
       if (data.hasSeenIntro) setHasSeenIntro(data.hasSeenIntro);
-      if (data.scores) setScores(data.scores);
+      if (data.scores) {
+        setScores(prev => {
+          // Merge old scores with initial scores to prevent undefined gameData
+          const merged = { ...prev };
+          Object.keys(data.scores).forEach(key => {
+            if (merged[key]) {
+              merged[key] = data.scores[key];
+            }
+          });
+          return merged;
+        });
+      }
       if (data.achievements) setAchievements(data.achievements);
       if (data.soundEnabled !== undefined) setSoundEnabled(data.soundEnabled);
     }
