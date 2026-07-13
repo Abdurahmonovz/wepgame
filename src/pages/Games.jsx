@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { Play, Zap, Target, Brain, Rocket, Palette, Move, Crosshair, Activity } from 'lucide-react';
+import { Play, Zap, Target, Brain, Rocket, Palette, Move, Crosshair, Activity, Grid } from 'lucide-react';
 
 const gamesList = [
   { id: 'neonRunner', name: 'Neon Runner', desc: 'Endless runner', icon: <Zap size={28} color="#fff" />, color: '#00f0ff', gradient: 'linear-gradient(135deg, rgba(0,240,255,0.4), rgba(0,100,255,0.1))' },
@@ -11,7 +11,8 @@ const gamesList = [
   { id: 'colorRush', name: 'Color Rush', desc: 'Ranglarni topish', icon: <Palette size={28} color="#fff" />, color: '#00ff66', gradient: 'linear-gradient(135deg, rgba(0,255,102,0.4), rgba(0,150,50,0.1))' },
   { id: 'shadowNinja', name: 'Shadow Ninja', desc: 'Svayp san\'ati', icon: <Move size={28} color="#fff" />, color: '#ff3333', gradient: 'linear-gradient(135deg, rgba(255,51,51,0.4), rgba(150,0,0,0.1))' },
   { id: 'archeryHero', name: 'Archery Hero', desc: 'Kamon otish', icon: <Crosshair size={28} color="#fff" />, color: '#ffd700', gradient: 'linear-gradient(135deg, rgba(255,215,0,0.4), rgba(150,120,0,0.1))' },
-  { id: 'neonSnake', name: 'Neon Snake', desc: 'Klassik iloncha', icon: <Activity size={28} color="#fff" />, color: '#39ff14', gradient: 'linear-gradient(135deg, rgba(57,255,20,0.4), rgba(20,150,10,0.1))' }
+  { id: 'neonSnake', name: 'Neon Snake', desc: 'Klassik iloncha', icon: <Activity size={28} color="#fff" />, color: '#39ff14', gradient: 'linear-gradient(135deg, rgba(57,255,20,0.4), rgba(20,150,10,0.1))' },
+  { id: 'neonBreaker', name: 'Neon Breaker', desc: 'G\'isht sindirish', icon: <Grid size={28} color="#fff" />, color: '#00ffff', gradient: 'linear-gradient(135deg, rgba(0,255,255,0.4), rgba(0,150,255,0.1))' }
 ];
 
 const Games = () => {

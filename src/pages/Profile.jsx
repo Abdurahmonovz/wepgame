@@ -11,7 +11,8 @@ const gameNames = {
   colorRush: 'Color Rush',
   shadowNinja: 'Shadow Ninja',
   archeryHero: 'Archery Hero',
-  neonSnake: 'Neon Snake'
+  neonSnake: 'Neon Snake',
+  neonBreaker: 'Neon Breaker'
 };
 
 const Profile = () => {

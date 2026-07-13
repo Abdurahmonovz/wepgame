@@ -22,6 +22,7 @@ import ColorRush from './games/ColorRush';
 import ShadowNinja from './games/ShadowNinja';
 import ArcheryHero from './games/ArcheryHero';
 import NeonSnake from './games/NeonSnake';
+import NeonBreaker from './games/NeonBreaker';
 
 const ProtectedRoute = ({ children }) => {
   const { userName } = useGame();
@@ -80,6 +81,7 @@ const App = () => {
               <Route path="shadowNinja" element={<ShadowNinja />} />
               <Route path="archeryHero" element={<ArcheryHero />} />
               <Route path="neonSnake" element={<NeonSnake />} />
+              <Route path="neonBreaker" element={<NeonBreaker />} />
             </Routes>
           </ProtectedRoute>
         } />
